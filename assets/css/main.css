@@ -1,0 +1,7 @@
+body {
+    background-image: url('https://picsum.photos/200/300/?random');
+}
+
+table, p {
+    background: white;
+}
