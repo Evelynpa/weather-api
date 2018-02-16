@@ -32,3 +32,7 @@ td:nth-child(2) {
 #weather-card h2 {
     font-size: 4em;
 }
+
+#weather-card i:not(:nth-child(2)) {
+    color: orange;
+}

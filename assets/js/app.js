@@ -15,7 +15,6 @@ function showPosition(position) {
   )
     .then(response => response.json())
     .then(data => {
-      console.log(data);
       let wind = data.currently.windSpeed;
       let humidity = data.currently.humidity;
       let uv = data.currently.uvIndex;
@@ -28,7 +27,7 @@ function showPosition(position) {
                                                       <div class="col-lg-12">
                                                       <h3>${timezone}</h3>
                                                       <h4>${Date(data.currently.time).slice(0, today - 2)}</h4>
-                                                      <h2>${current} °c</h2>
+                                                      <h2>${Math.floor(current)}°c</h2>
                                                       <canvas id="" width="64" height="64"></canvas>
                                                       </div>
                                                       </div>
@@ -76,7 +75,6 @@ function showPosition(position) {
         ];
 
         let daily = data.daily.data;
-        console.log(daily);
         for (let i in daily) {
           let date = new Date(daily[i].time * 1000);
           let day = days[date.getDay()];
@@ -87,8 +85,11 @@ function showPosition(position) {
                                     <tbody>
                                     <tr>
                                     <td><canvas id="${daily[i].icon}" width="30" height="30"></canvas> ${day}</td>
-                                    <td>${daily[i].temperatureMax}°c - 
-                                    ${daily[i].temperatureMin}°c</td>
+                                    <td><i class="glyphicon glyphicon-arrow-down"></i> 
+                                    ${Math.floor(daily[i].temperatureMin)}°c 
+                                    <i class="glyphicon glyphicon-minus"></i> 
+                                    ${Math.floor(daily[i].temperatureMax)}°c 
+                                    <i class="glyphicon glyphicon-arrow-up"></i></td>
                                     </tr>
                                     </div>
                                     </div>`);
@@ -96,7 +97,7 @@ function showPosition(position) {
         }
       });
     })
-    .catch(error => console.log("Error de conexión"));
+    .catch(error => alert("Error de conexión"));
 }
 
 // skycons
