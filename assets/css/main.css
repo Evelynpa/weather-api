@@ -1,7 +1,38 @@
 body {
     background-image: url('https://picsum.photos/200/300/?random');
+    background-size: contain;
+    height: 100vh;
 }
 
-table, p {
-    background: white;
+#weather-card {
+    background: rgba(255, 255, 255, 0.945);
+    padding: 0 2em;
+    border-radius: 1em;
+    margin: 8vh 0;
+    padding: 1em;
+}
+
+td {
+    font-size: 1.5em;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+#weather-card button {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+#weather-card h2 {
+    font-size: 4em;
+}
+
+#weather-card i:not(:nth-child(2)) {
+    color: orange;
 }
