@@ -97,7 +97,7 @@ function showPosition(position) {
         }
       });
     })
-    .catch(error => alert("Error de conexión"));
+    .catch(error => console.log(error));
 }
 
 // skycons
