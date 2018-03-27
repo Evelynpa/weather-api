@@ -11,7 +11,7 @@ function showPosition(position) {
   let longitude = position.coords.longitude;
 
   fetch(
-    `https://api.darksky.net/forecast/c86092aaba664860188a4c14e0fdbab9/${latitude},${longitude}?units=auto`
+    `https://api.darksky.net/forecast/c86092aaba664860188a4c14e0fdbab9/${latitude},${longitude}?units=auto`, {mode: 'no-cors'}
   )
     .then(response => response.json())
     .then(data => {
