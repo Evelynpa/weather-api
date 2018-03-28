@@ -9,9 +9,11 @@
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
+  
+  const cors = 'https://cors-anywhere.herokuapp.com/';
 
   fetch(
-    `https://api.darksky.net/forecast/c86092aaba664860188a4c14e0fdbab9/${latitude},${longitude}?units=auto`, {mode: 'no-cors'}
+    `${cors}https://api.darksky.net/forecast/c86092aaba664860188a4c14e0fdbab9/${latitude},${longitude}?units=auto`
   )
     .then(response => response.json())
     .then(data => {
