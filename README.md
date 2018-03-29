@@ -14,7 +14,19 @@ Trivia game questions by category, type and difficulty.
 
 ## Development
 
-Made with Javascript and the DarkSky API.
++ Languages
+   - Javascript
+
++ Libraries
+   - JQuery
+
++ Frameworks
+   - Bootstrap 4
+
++ APIs
+   - Geolocation
+   - [Dark Sky](https://darksky.net/dev)
+   - [CORS Anywhere](https://cors-anywhere.herokuapp.com/)
 
 
 ## Authors
