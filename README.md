@@ -2,7 +2,7 @@
 
 Do you ever leave the house in such a rush you forget to watch the weather forecast? Fear no more, for this simple yet amazing web app lets you check the current weather in a sec, just in time to get back home and grab an umbrella before taking off 
 
-![desktop sample](assets/img/sample1.png)
+![sample1.png](https://s31.postimg.org/azdhprkrv/sample1.png)
 
 ![mobile sample](assets/img/sample2.png)
 
