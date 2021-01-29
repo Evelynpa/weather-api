@@ -1,19 +1,33 @@
 body {
-    background-image: url('https://picsum.photos/200/300/?random');
-    background-size: contain;
+    background-image: url('https://picsum.photos/2000/2000/?random');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
+}
+
+nav {
+    font-family: 'Faster One', cursive;
+    color: white;
+    background: orange;
+    text-align: center;
 }
 
 #weather-card {
     background: rgba(255, 255, 255, 0.945);
     padding: 0 2em;
     border-radius: 1em;
-    margin: 8vh 0;
+    margin-top: 3.5vh;
     padding: 1em;
 }
 
+#weather-card h3 {
+    line-height: 2;
+}
+
 td {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding: 0!important;
 }
 
 td:first-child {
@@ -27,6 +41,8 @@ td:nth-child(2) {
 #weather-card button {
     width: 100%;
     font-size: 1.5em;
+    background: orange;
+    color: white;
 }
 
 #weather-card h2 {
@@ -34,5 +50,16 @@ td:nth-child(2) {
 }
 
 #weather-card i:not(:nth-child(2)) {
+    color: orange;
+}
+
+#loading {
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.fa-angle-double-right {
     color: orange;
 }
